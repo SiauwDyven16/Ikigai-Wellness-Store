@@ -1,0 +1,17 @@
+{
+  "name": "first-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.2.2"
+  }
+}

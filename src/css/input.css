@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+@plugin "daisyui";
+
+@layer base {
+    * {
+        font-family: 'Netflix Sans', sans-serif;
+    }
+
+    .carrousel-item {
+        background-color: #ffffff20;
+        width: 640px;
+        height: 360px;
+        border-radius: 16px;
+        border: 1px solid #ffffff20;
+        box-shadow: 0 0 10px #ffffff20;
+    }
+
+    .display {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.25;
+        color: #ffffff;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .heading-2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .subheading {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .body {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+        letter-spacing: -0.02rem;
+    }
+
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../assets/font/NetflixSans-Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../assets/font/NetflixSans-Rg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: regular;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../assets/font/NetflixSans-Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../assets/font/NetflixSans-Bd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../assets/font/NetflixSans-Blk.ttf') format('truetype');
+    font-weight: 900;
+    font-style: black;
+    font-display: swap;
+}
