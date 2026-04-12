@@ -43,8 +43,31 @@
 
     .body {
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         color: #ffffff;
+        letter-spacing: -0.02rem;
+    }
+
+    .small-text {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #ffffff90;
+        letter-spacing: -0.02rem;
+    }
+
+    .footer-link {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #ffffff90;
+        letter-spacing: -0.02rem;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+    }
+
+    .extra-small-text {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: #ffffff60;
         letter-spacing: -0.02rem;
     }
 
