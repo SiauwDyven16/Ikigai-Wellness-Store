@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#e50914",
-        secondary: "#ffffff",
+        primary: "#162648",
+        secondary: "#1945A4",
         dark: "#000000",
         text: "#ffffff",
         border: "#ffffff20",
       },
       fontFamily: {
-        'netflix': ['"Netflix Sans"', 'sans-serif'],
+        'zen': ['"Zen Maru Gothic"', 'sans-serif'],
         'impact': ['"Impact"', 'sans-serif'],
       },
       fontSize: {

@@ -1,15 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Clone</title>
+    <title>Ikigai Wellness - Wellness Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="src/css/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="">
 
+    <header class="fixed z-999 navbar bg-transparent shadow-sm w-full px-18 py-5">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <img src="src/assets/Image/ikigai-logo.webp" alt="" class="w-25">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 flex gap-4">
+                <li class="font-medium">
+                    <details>
+                        <summary>Our Products</summary>
+                        <ul class="p-2 bg-base-100 w-40 z-1">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+
+                <li class="font-medium"><a>Investments</a></li>
+                <li class="font-medium"><a>Pertanyaan Yang Sering Diajukan</a></li>
+                <li class="font-medium"><a>Cerita Kami</a></li>
+                <li class="font-medium"><a>Cara Pembuatannya</a></li>
+                <li class="font-medium">
+                    <details>
+                        <summary>Indonesia</summary>
+                        <ul class="p-2 bg-base-100 w-40 z-1">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <button
+                class="bg-primary text-white px-8 py-3 rounded-lg border-none drop-shadow-none font-medium text-sm">HUBUNGI
+                KAMI</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-1 h-[800px] flex flex-col items-end gap-5 relative z-0">
+
+        <img src="src/assets/Image/hero-banner.webp" alt=""
+            class="absolute min-h-[800px] max-h-[800px] w-screen object-cover">
+        <div class="w-full px-[72px] pt-[120px] relative z-1">
+            <h2 class="subheading-text mb-2">Jelajahi Tujuan Anda</h2>
+            <h1 class="display-text">Dimana Desain <br>Bertemu <span class="font-medium">Pemulihan</span></h1>
+        </div>
+
+        <div class="w-fit px-[72px] flex flex-col gap-5 relative z-1">
+            <h2 class="subheading-text max-w-[300px]">Temukan pemandian es yang dibuat dengan makna untuk membantu Anda
+                menjalani
+                tujuan
+                hidup Anda
+                sehari-hari.</h2>
+            <button
+                class="w-2/3 bg-[#00000033] text-[#ffffff] border-1 border-white backdrop-blur-sm px-6 py-3 rounded-md drop-shadow-none font-medium label-text">Jelajahi
+                Sekarang</button>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="h-fit w-screen bg-black flex flex-col items-center py-[100px] overflow-hidden">
+        <h2 class="heading-text text-white"> Berakar pada ritual.</h2>
+        <h1 class="display-text">Dibuat dengan tujuan.</h1>
+        <img src="src/assets/Image/Gentong.webp" alt="" class="w-[80vw]">
+
+        <!-- description -->
+        <div class="flex flex-col gap-5 justify-center items-center">
+            <h2 class="subheading-text text-center">Sebuah ekpresi sejati dari kerajinan Indonesia.<br>Tradisional.
+                Fungsional. Abadi</h2>
+            <h2 class="subheading-text text-center">Setiap Pemandian Es Ikigai di rancang oleh arsitek dan dibangun
+                dengan
+                tangan dari<br>
+                kayu
+                jati berkelanjutan - dibuat untuk suasana tropis yang autentik dan elegan</h2>
+            <h2 class="subheading-text text-center">Pilih <span class="font-medium">Desain Klasik</span> atau pesan
+                <span>Edisi yang
+                    sepenuhnya
+                    Dibuat Khusus</span>, disesuaikan<br> dengan gaya hidup atau bisnis anda
+            </h2>
+            <button
+                class="bg-secondary w-fit text-white px-8 py-3 mt-5 rounded-lg border-none drop-shadow-none font-medium text-sm">Temukan
+                Ikigai Anda</button>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section
+        class="relative h-[80vh] w-screen bg-black flex flex-col justify-center py-[100px] overflow-hidden border-y-1 border-white">
+        <img src="src/assets/Image/Tukang.webp" alt=""
+            class="absolute w-screen h-screen object-cover bg-center no-repeat z-0">
+        <div class="flex flex-col w-fit px-[72px] relative z-1">
+            <h1 class=" display-text font-medium ">Keahlian Abadi</h1>
+            <h1 class="display-text mb-10">untuk Ritual Modern</h1>
+            <h2 class="text-[24px] font-medium pb-3">Dibuat Tahan Lama</h2>
+            <h2 class="text-[24px] w-[420px] opacity-80 leading-[120%]">Dibuat dengan tangan dari kayu jati
+                berkelanjutan, setiap
+                penangas es
+                memadukan
+                keahlian presisi dengan desain abadi.</h2>
+            <button
+                class="w-fit bg-[#00000033] text-[#ffffff] border-1 border-white backdrop-blur-sm px-6 py-3 mt-10 rounded-md drop-shadow-none font-medium label-text">Jelajahi
+                Sekarang</button>
+        </div>
+
+
+    </section>
+
+    <!-- Recovery Section -->
+    <section class="h-fit bg-[#EEEADB] px-[72px] pt-[100px]">
+        <div class="flex justify-between">
+            <div class="flex flex-col w-fit h-fit">
+                <h1 class="text-[48px] leading-[100%] font-medium text-black">Dirancang Untuk Pemulihan</h1>
+                <h1 class="text-[48px] leading-[100%] text-black">Dibuat Untuk Anda.</h1>
+
+                <!-- Data -->
+                <div class="flex gap-20 w-fit mt-10 opacity-60">
+
+                    <!-- Data1 -->
+                    <div class="flex flex-col">
+                        <h2 class="text-[28px] font-medium text-black">186 kg</h2>
+                        <h2 class="small-text font-medium text-black">Berat</h2>
+                    </div>
+
+                    <!-- Data2 -->
+                    <div class="flex flex-col">
+                        <h2 class="text-[28px] font-medium text-black">88,5 cm</h2>
+                        <h2 class="small-text font-medium text-black">Diameter</h2>
+                    </div>
+
+                    <!-- Data3 -->
+                    <div class="flex flex-col">
+                        <h2 class="text-[28px] font-medium text-black">4 derajat celsius</h2>
+                        <h2 class="small-text font-medium text-black">Suhu</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="flex flex-col items-end gap-4">
+                <button
+                    class="bg-secondary w-fit text-white px-8 py-3 mt-5 rounded-lg border-none drop-shadow-none font-medium text-sm">Lihat
+                    Spesifikasi</button>
+                <p class="small-text text-black">Dipercaya oleh <span class="font-bold">MARRIOT BONVOY</span></p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-15">
+            <div
+                class="min-h-[740px] flex flex-col p-10 bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#00000033]">
+
+                <h2 class="text-[24px] font-medium text-black pb-3">Milik Anda, berdasarkan Desain</h2>
+                <h2 class="text-[24px] w-[420px] text-black leading-[120%]">Pilih dari koleksi kami yang telah dirancang
+                    dengan
+                    penuh
+                    pertimbangan, atau pesan
+                    penangas es yang dibuat khusus untuk mencerminkan gaya hidup atau bisnis Anda.</h2>
+
+                <button
+                    class="bg-[#00000033] w-fit text-white px-8 py-3 mt-10 rounded-lg border-white backdrop-blur-sm font-medium text-sm">Belanja
+                    Produk</button>
+
+            </div>
+            <div
+                class="min-h-[740px] flex flex-col justify-end p-10 bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#00000033]">
+                <h2 class="text-[24px] font-medium text-black pb-3">Lebih kuat. Siap lagi.</h2>
+                <h2 class="text-[24px] w-[420px] text-black leading-[120%]">Terapi dingin mengurangi otot
+                    nyeri, membantu atlet pulih
+                    dan tampil pada puncaknya.</h2>
+                <button
+                    class="bg-[#00000033] w-fit text-white px-8 py-3 mt-10 rounded-lg border-white backdrop-blur-sm font-medium text-sm">Belanja
+                    Produk</button>
+            </div>
+            <div
+                class="col-span-2 row-start-2 h-[600px] flex flex-col justify-end p-10 bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#00000033]">
+                <h2 class="text-[24px] font-medium text-black pb-3">Mulailah dengan Tajam. Jauhi.
+                </h2>
+                <h2 class="text-[24px] w-[420px] text-black leading-[120%]">Perendaman dingin membangunkan
+                    tubuh dan pikiran Anda, meningkatkan
+                    energi, fokus, dan suasana hati sepanjang hari.
+
+                </h2>
+                <button
+                    class="bg-[#00000033] w-fit text-white px-8 py-3 mt-10 rounded-lg border-white backdrop-blur-sm font-medium text-sm">Belanja
+                    Produk</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Every Detail Section -->
+    <section class="h-fit bg-[#EEEADB] px-[72px]">
+        <div class="flex justify-between px-10 items-center">
+            <h1 class="text-[48px] leading-[100%] font-medium text-black">Ubah <span>Dingin</span> Menjadi
+                <span>Kekuatan.</span>
+            </h1>
+            <h2 class="heading-text leading-[100%] text-black">Keranjinan. Budaya. Komunitas.</h2>
+        </div>
+        <div class="grid grid-cols-1 grid-rows-2 gap-5 mt-15">
+            <div
+                class="min-h-[480px] flex 
+                flex-col justify-center p-10 px-20 bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#00000033]">
+                <h1 class="text-[48px] text-black pb-5 leading-[100%]"><span class="font-medium">Tujuan</span> dalam
+                    <br> Setiap
+                    <span class="font-medium">Detail.</span>
+                </h1>
+                <h2 class="text-[20px] w-1/2 text-black leading-[120%] opacity-60">Setiap tong dibuat dengan tangan dari
+                    kayu
+                    jati yang tahan lama, disempurnakan melalui penelitian & pengembangan, dan diselesaikan dengan
+                    tujuan tertentu.</h2>
+                <i class="subheading-text font-bold text-black underline mt-5">Pelajari Lebih Lanjut</i>
+            </div>
+            <div
+                class="h-fit flex 
+                flex-col justify-center py-[140px] px-20 bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#00000033]">
+                <h2 class="text-[20px] w-1/2 text-black leading-[120%] opacity-60">Dibuat agar tahan terhadap cuaca,
+                    didesain untuk melengkapi ruangan apa pun, dan direkayasa agar tahan terhadap suhu dingin seumur
+                    hidup.</h2>
+                <i class="subheading-text font-bold text-black underline mt-5">Pelajari Lebih Lanjut</i>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Showcase Ikigai Section -->
+    <section class="h-fit w-full bg-[#000000] py-15 px-[72px]">
+        <div class="flex justify-between items-center pb-15">
+            <h1 class="text-[48px] leading-[100%] font-medium text-white">Memamerkan <br> Jalan Ikigai</h1>
+            <h2 class="heading-text text-white leading-[120%] opacity-60">Kerajinan. Budaya. Komunitas.</h2>
+        </div>
+
+        <div class="grid grid-cols-3 grid-rows-1 gap-4 w-full ">
+            <div
+                class="min-h-[510px] flex p-10 flex-col justify-end bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#ffffff33]">
+                <h2 class="subheading-text font-medium text-white pb-3">Mulailah dengan Tajam. Jauhi.
+                </h2>
+                <h2 class="small-text text-white leading-[120%]">Setiap tong dibuat dengan tangan di Jepara
+                    dari kayu jati yang bersumber secara lestari dan dibuat dengan presisi untuk memberikan kinerja yang
+                    tahan lama dan desain yang halus.
+
+                </h2>
+                <i class="small-text font-bold text-white underline mt-5">Pelajari Lebih Lanjut</i>
+            </div>
+            <div
+                class="min-h-[510px] flex p-10 flex-col justify-end bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#ffffff33]">
+                <h2 class="subheading-text font-medium text-white pb-3">Tentang Kami
+                </h2>
+                <h2 class="small-text  text-white leading-[120%]">Terinspirasi oleh filosofi ikigai Jepang,
+                    kami menciptakan pemandian es yang menyatukan kehidupan yang bermakna, keahlian abadi, dan ilmu
+                    pemulihan modern.
+
+                </h2>
+                <i class="small-text font-bold text-white underline mt-5">Pelajari Lebih Lanjut</i>
+            </div>
+            <div
+                class="min-h-[510px] flex p-10 flex-col justify-end bg-[url('src/assets/Image/Gentong.jpg')] bg-cover bg-center border-1 border-[#ffffff33]">
+                <h2 class="subheading-text font-medium text-white pb-3">Ikuti Gerakannya.
+                </h2>
+                <h2 class="small-text text-white leading-[120%]">Jadilah bagian dari komunitas global yang
+                    menerapkan perendaman dingin sebagai ritual harian untuk mendapatkan kekuatan, kejernihan, dan
+                    keseimbangan.
+
+                </h2>
+                <i class="small-text font-bold text-white underline mt-5">Pelajari Lebih Lanjut</i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ritual Insta Section -->
+    <section class="h-fit w-full bg-[#EEEADB] py-15 px-[72px] gap-8">
+        <div class="flex flex-col ">
+            <p class="text-[20px] text-black">Ikuti ritualnya di instagram</p>
+            <h2 class="heading-text font-medium text-black pt-5 pb-10">@weare.ikigai</h2>
+        </div>
+
+        <div class="grid grid-cols-4 grid-rows-2 gap-4 min-h-[660px] min-w-full">
+            <div class="row-span-2 h-full border-1 border-[#00000033]">1</div>
+            <div class="col-span-2 h-full border-1 border-[#00000033]">3</div>
+            <div class="col-start-2 row-start-2 h-full border-1 border-[#00000033]">5</div>
+            <div class="col-start-3 row-start-2 h-full border-1 border-[#00000033]">6</div>
+            <div class="row-span-2 col-start-4 row-start-1 h-full border-1 border-[#00000033]">7</div>
+        </div>
+
+
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="flex h-fit w-full bg-[#EEEADB] py-15 px-[72px] gap-8">
+        <div class="w-[600px] flex flex-col">
+            <h1 class="text-[40px] font-medium text-black">Pertanyaan Anda, <br> Dijawab dengan Jelas</h1>
+            <p class="small-text text-black"> Temukan jawaban atas pertanyaan umum tentang sistem rendam dingin kami
+                dan bagaimana
+                sistem tersebut meningkatkan pemulihan.</p>
+
+            <button
+                class="bg-secondary w-fit text-white px-8 py-3 mt-5 rounded-lg border-none drop-shadow-none font-medium text-sm">Kirim
+                Pesan Kepada Kami</button>
+        </div>
+
+        <div class="flex flex-col gap-3 w-full">
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Bagaimana Cara Mengaturnya?</div>
+                <div class="collapse-content small-text text-black">Jika Anda berada di Indonesia, kami akan menangani
+                    pengaturan lengkap
+                    tanpa repot. Untuk pelanggan internasional, kami akan memberikan instruksi langkah demi langkah yang
+                    jelas dan menawarkan dukungan langsung melalui panggilan video untuk memandu Anda melalui proses
+                    pengaturan.</div>
+            </div>
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Bagaimana Cara Pemeliharaanya?</div>
+                <div class="collapse-content small-text text-black">Jika Anda berada di Indonesia, kami akan menangani
+                    pengaturan lengkap
+                    tanpa repot. Untuk pelanggan internasional, kami akan memberikan instruksi langkah demi langkah yang
+                    jelas dan menawarkan dukungan langsung melalui panggilan video untuk memandu Anda melalui proses
+                    pengaturan.</div>
+            </div>
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Berapa Biaya Listrik?</div>
+                <div class="collapse-content small-text text-black">Biaya listrik untuk menjalankan bak mandi es kami
+                    relatif rendah. Sistem pendingin dirancang untuk beroperasi secara efisien, dan konsumsi listrik
+                    akan bervariasi tergantung pada suhu yang diinginkan dan frekuensi penggunaan. Kami akan memberikan
+                    estimasi biaya listrik yang lebih akurat berdasarkan kebutuhan spesifik Anda.</div>
+            </div>
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Berapa Biaya Pengiriman?</div>
+                <div class="collapse-content small-text text-black">Biaya pengiriman akan bervariasi tergantung pada
+                    lokasi Anda. Kami akan memberikan estimasi biaya pengiriman setelah Anda memberikan informasi
+                    lokasi Anda.</div>
+            </div>
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Seberapa Dingin Suhunya?</div>
+                <div class="collapse-content small-text text-black">Suhu bak mandi es kami dapat diatur sesuai
+                    keinginan Anda, mulai dari suhu ruangan hingga suhu yang sangat dingin. Sistem pendingin kami
+                    mampu mencapai suhu serendah 3°C untuk memberikan pengalaman rendam dingin yang optimal.</div>
+            </div>
+            <div class="collapse collapse-arrow border-b-1 border-[#00000033] rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title subheading-text font-bold text-black">Bisakah Anda memasang bak mandi es di
+                    hotel, villa, atau tempat lain?</div>
+                <div class="collapse-content small-text text-black">Ya, tentu saja! Kami melayani pemasangan bak mandi
+                    es di berbagai lokasi, termasuk hotel, villa, dan tempat lainnya. Tim kami akan datang langsung ke
+                    lokasi Anda untuk melakukan instalasi dan memastikan semuanya berfungsi dengan baik.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex flex-col gap-15 bg-black px-[72px] py-15">
+
+        <div class="flex w-full justify-between">
+            <div class="flex flex-col">
+                <h1 class="heading-text"> Ikuti Kami</h1>
+                <div class="flex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="src/assets/Image/ikigai-logo.webp" alt="" class="w-25">
+                <h2 class="subheading-text">Jalani Tujuan Hidupmu</h2>
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex flex-col opacity-60">
+                <h2 class="text-[30px] font-medium text-white">Tentang</h2>
+                <p class="text-[18px]">Cara Pembuatan</p>
+                <p class="text-[18px]">Tanya Jawab Umum</p>
+                <p class="text-[18px]">Profile</p>
+            </div>
+            <div class="flex flex-col opacity-60">
+                <h2 class="text-[30px] font-medium text-white">Pembelian</h2>
+            </div>
+            <div class="flex flex-col opacity-60">
+                <h2 class="text-[30px] font-medium text-white">Menyewa</h2>
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex gap-2">
+                <p class="small-text">Pribadi</p>
+                <p class="small-text">Pengaturan Cookie</p>
+                <p class="small-text">Peta & Situs Hukum</p>
+                <p class="small-text">Persyaratan Aksesibilitas</p>
+            </div>
+            <p class="small-text">© 2026 Ikigai Wellness Store. All rights reserved.</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>

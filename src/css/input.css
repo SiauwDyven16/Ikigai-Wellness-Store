@@ -6,46 +6,87 @@
 
 @layer base {
     * {
-        font-family: 'Netflix Sans', sans-serif;
+        font-family: 'Zen Maru Gothic', sans-serif;
     }
+
+
+    .display-text {
+        font-size: 4rem;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 100%;
+    }
+
+    .heading-text {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .subheading-text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 28px;
+    }
+
+    .label-text {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .body-text {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .small-text {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+
 
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    src: url('../assets/font/NetflixSans-Lt.ttf') format('truetype');
+    font-family: 'Zen Maru Gothic';
+    src: url('../assets/font/ZenMaruGothic-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: light;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    src: url('../assets/font/NetflixSans-Rg.ttf') format('truetype');
+    font-family: 'Zen Maru Gothic';
+    src: url('../assets/font/ZenMaruGothic-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: regular;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    src: url('../assets/font/NetflixSans-Md.ttf') format('truetype');
+    font-family: 'Zen Maru Gothic';
+    src: url('../assets/font/ZenMaruGothic-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: medium;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    src: url('../assets/font/NetflixSans-Bd.ttf') format('truetype');
+    font-family: 'Zen Maru Gothic';
+    src: url('../assets/font/ZenMaruGothic-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: bold;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    src: url('../assets/font/NetflixSans-Blk.ttf') format('truetype');
+    font-family: 'Zen Maru Gothic';
+    src: url('../assets/font/ZenMaruGothic-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: black;
     font-display: swap;
